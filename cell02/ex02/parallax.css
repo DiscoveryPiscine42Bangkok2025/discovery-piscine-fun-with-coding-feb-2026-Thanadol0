@@ -1,0 +1,51 @@
+body, html {
+    margin: 0;
+}
+
+
+.section-one, .section-two {
+    min-height: 200vh;
+
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-one {
+    background-image: url('https://www.shutterstock.com/shutterstock/videos/15957499/thumb/12.jpg?ip=x480');
+}
+
+.section-two {
+    background-image: url('https://f.ptcdn.info/405/064/000/psv27931nP5faqNR8tb-o.jpg');
+}
+
+
+.static-block {
+    height: 300px;
+    background-color: black;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.message {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.static-block .message {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
