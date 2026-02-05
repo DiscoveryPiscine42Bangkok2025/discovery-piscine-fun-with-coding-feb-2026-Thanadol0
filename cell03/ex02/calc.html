@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 02: It's over 9000</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .calculator {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input, select {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="calculator">
+    <input type="text" id="leftMember" placeholder="Left number">
+
+    <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+    </select>
+
+    <input type="text" id="rightMember" placeholder="Right number">
+
+    <input type="submit" value="Try me!" id="submitBtn">
+</div>
+
+<script>
+
+    function isPositiveInteger(str) {
+        const n = Number(str);
+        return n >= 0 && Number.isInteger(n) && str.trim() !== "";
+    }
+
+    const btn = document.getElementById('submitBtn');
+
+    btn.addEventListener('click', function() {
+
+        const leftInput = document.getElementById('leftMember').value;
+        const rightInput = document.getElementById('rightMember').value;
+        const operator = document.getElementById('operator').value;
+
+
+        const l = Number(leftInput);
+        const r = Number(rightInput);
+
+        if (!isPositiveInteger(leftInput) || !isPositiveInteger(rightInput)) {
+            alert('Error :(');
+            return;
+        }
+
+        if ((operator === '/' || operator === '%') && r === 0) {
+            console.log("It's over 9000!");
+            alert("It's over 9000!");
+            return;
+        }
+
+        let result = 0;
+        switch (operator) {
+            case '+': result = l + r; break;
+            case '-': result = l - r; break;
+            case '*': result = l * r; break;
+            case '/': result = l / r; break;
+            case '%': result = l % r; break;
+        }
+
+        console.log(result);
+        alert(result);
+    });
+
+    setInterval(function() {
+        alert('Please, use me...');
+    }, 30000);
+
+</script>
+</body>
+</html>
