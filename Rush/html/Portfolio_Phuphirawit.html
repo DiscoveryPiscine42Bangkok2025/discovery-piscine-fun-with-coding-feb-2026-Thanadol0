@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/Portfolio.css">
+
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="#home" class="logo">PORTFOLIO</a>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-me">About</a></li>
+            <li><a href="#projects">experiences</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+                <a href="HomePage.html" class="btn-back">
+                    <i class="fas fa-arrow-left"></i> Home Page
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<section id="home">
+    <div class="hero-container">
+        <div class="hero-text">
+            <span>Hello, I am</span>
+            <h1>Phuphirawit<br>Kamlanghan</h1>
+            <p>นักศึกษาชั้นปีที่ 2 สาขาวิทยาการคอมพิวเตอร์ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</p>
+            <a href="#projects" style="display:inline-block; background: var(--primary); color:white; padding: 12px 30px; border-radius: 50px; text-decoration:none; font-weight:600; box-shadow: 0 5px 15px rgba(37,99,235,0.3);">View My Activity</a>
+        </div>
+        <div class="hero-img-box">
+            <img src="../img/phuphirawit.jpg" alt="Profile" class="hero-img">
+        </div>
+    </div>
+</section>
+
+<section id="about-me" style="background-color: white;">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-wrapper">
+            <div class="about-text">
+                <h3>ความฝัน</h3>
+                <p>คนขี้เกียจที่ร่ำรวย</p>
+            </div>
+            <div class="personal-info-card">
+                <h3 style="margin-bottom: 20px;">Personal Info</h3>
+                <ul class="info-list">
+                    <li><span class="info-label">Name:</span><span class="info-value">Phuphirawit Kamlanghan</span></li>
+                    <li><span class="info-label">Age:</span><span class="info-value">20 Years</span></li>
+                    <li><span class="info-label">Sex:</span><span class="info-value">Male</span></li>
+                    <li><span class="info-label">Location:</span><span class="info-value">Bangkok, Thailand</span></li>
+                    <li><span class="info-label">Email:</span><span class="info-value">67050444@kmitl.ac.th</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="projects-section">
+    <div class="container">
+        <h2 class="section-title title-light">Activity</h2>
+
+        <div class="projects-wrapper">
+
+            <div class="project-card">
+                <div class="project-img-box">
+                    <img src="../img/activity_p_1.jpg" alt="Kibo RPC">
+                </div>
+                <div class="project-info">
+                    <h3 class="project-name">การออกแบบโปรแกรมเพื่อช่วยในการออกกำลังกายด้วย OpenCV</h3>
+                    <p class="project-desc">โปรเจ็คนี้จัดทำเพื่อช่วยแนะนำท่าออกกำลังกายให้ถูกต้องด้วยท่าพื้นฐาน</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img-box">
+                    <img src="../img/activity_p_2.png" alt="ICT Challenge">
+                </div>
+                <div class="project-info">
+                    <h3 class="project-name">การออกแบบและสร้างอุปกรณ์ควบคุมการเปิด - ปิดหลอดไฟ ประตู และหน้าต่างภายในบ้าน</h3>
+                    <p class="project-desc">โปรเจ็คนี้คือการประยุกต์ใช้งาน Arduino กับบ้านแบบจำลอง</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="contact" class="contact-section">
+    <div class="container">
+        <h2>Contract</h2>
+        <p style="color: #94a3b8; margin-bottom: 30px;">ช่องทางติดต่อ</p>
+
+        <div class="social-links">
+            <a href="https://github.com/Nomomorin" target="_blank" class="social-btn">
+                <i class="fab fa-github"></i>
+            </a>
+
+            <a href="https://www.instagram.com/kmooppz/" target="_blank" class="social-btn">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+
+        <a href="#home" class="back-link">Scroll to Top</a>
+        <p style="margin-top: 30px; font-size: 0.8rem; opacity: 0.5;">© phkamlan</p>
+    </div>
+</footer>
+
+</body>
+</html>
