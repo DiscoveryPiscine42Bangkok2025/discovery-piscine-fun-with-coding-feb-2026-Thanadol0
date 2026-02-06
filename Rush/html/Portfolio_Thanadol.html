@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/Portfolio.css">
+
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="#home" class="logo">PORTFOLIO</a>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-me">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+            <li>
+                <a href="HomePage.html" class="btn-back">
+                    <i class="fas fa-arrow-left"></i> Home Page
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<section id="home">
+    <div class="hero-container">
+        <div class="hero-text">
+            <span>Hello, I am</span>
+            <h1>Thanadol<br>Sarakul</h1>
+            <p>สวัสดีครับ เป็นนักศึกษา สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง สาขาวิชา Computer Science ชั้นปีที่ 2 ครับ</p>
+            <a href="#projects" style="display:inline-block; background: var(--primary); color:white; padding: 12px 30px; border-radius: 50px; text-decoration:none; font-weight:600; box-shadow: 0 5px 15px rgba(37,99,235,0.3);">View My Activity</a>
+        </div>
+        <div class="hero-img-box">
+            <img src="../img/thanadol.jpg" alt="Profile" class="hero-img">
+        </div>
+    </div>
+</section>
+
+<section id="about-me" style="background-color: white;">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-wrapper">
+            <div class="about-text">
+                <h3>ความฝัน</h3>
+                <p>มีงานที่ดีและมีเงินครับ</p>
+            </div>
+            <div class="personal-info-card">
+                <h3 style="margin-bottom: 20px;">Personal Info</h3>
+                <ul class="info-list">
+                    <li><span class="info-label">Name:</span><span class="info-value">Thanadol Sarakul</span></li>
+                    <li><span class="info-label">Age:</span><span class="info-value">20 Years</span></li>
+                    <li><span class="info-label">Sex:</span><span class="info-value">Male</span></li>
+                    <li><span class="info-label">Location:</span><span class="info-value">Bangkok, Thailand</span></li>
+                    <li><span class="info-label">Email:</span><span class="info-value">67050209@kmitl.ac.th</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="projects-section">
+    <div class="container">
+        <h2 class="section-title title-light">Activity</h2>
+
+        <div class="projects-wrapper">
+
+            <div class="project-card">
+                <div class="project-img-box">
+                    <img src="img/กิจกรรม02.jpg" alt="Kibo RPC">
+                </div>
+                <div class="project-info">
+                    <h3 class="project-name">GRAND ROBOTICS CHAMPIONSHIP 2023</h3>
+                    <p class="project-desc">เป็นการแข่งขันบังคับหุ่นยนย์และประกอบหุ่นยนต์</p>
+                    <div class="project-footer"><i class="fas fa-trophy"></i> ได้รับรางวัลรองชนะเลิศอันดับ 3</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img-box">
+                    <img src="../img/activity.jpg" alt="ICT Challenge">
+                </div>
+                <div class="project-info">
+                    <h3 class="project-name">ศิลปหัตถกรรมนักเรียนครั้งที่ 71</h3>
+                    <p class="project-desc">เป็นการแข่งขันสร้าง Web App</p>
+                    <div class="project-footer"><i class="fas fa-medal"></i> ได้รับรางวัลชนะเลิศอันดับ 1</div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+<footer id="contact" class="contact-section">
+    <div class="container">
+        <h2>Contract</h2>
+        <p style="color: #94a3b8; margin-bottom: 30px;">ช่องทางติดต่อ</p>
+
+        <div class="social-links">
+            <a href="https://github.com/Thanadol0" target="_blank" class="social-btn">
+                <i class="fab fa-github"></i>
+            </a>
+
+            <a href="https://www.instagram.com/piece_tnd/" target="_blank" class="social-btn">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+
+        <a href="#home" class="back-link">Scroll to Top</a>
+        <p style="margin-top: 30px; font-size: 0.8rem; opacity: 0.5;">© tsarakul</p>
+    </div>
+</footer>
+
+</body>
+</html>
